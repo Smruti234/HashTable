@@ -17,6 +17,6 @@ public class HashMapTest {
 		}
 		int frequency = myHashMap.get("to");
 		System.out.println(myHashMap);
-		System.out.println("Frequency of word(to) is " + frequency);
+                Assert.assertEquals(expected:2,frequency);
 		}
 }
