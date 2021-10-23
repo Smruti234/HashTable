@@ -1,6 +1,7 @@
 package HashTable;
 
 import org.junit.Test;
+import org.junit.Assert;
 
 public class HashMapTest {
 	@Test
@@ -19,6 +20,6 @@ public class HashMapTest {
 		}
 		int frequency = myHashMap.get("paranoid");
 		System.out.println(myHashMap);
-		System.out.println("Frequency of word(paranoid) is " + frequency);
+		 Assert.assertEquals(expected:2,frequency);
 		}
 }
