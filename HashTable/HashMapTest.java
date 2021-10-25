@@ -19,7 +19,7 @@ public class HashMapTest {
 			myHashMap.add(word, value);
 		}
 		int frequency = myHashMap.get("paranoid");
-		System.out.println(myHashMap);
-		 Assert.assertEquals(expected:2,frequency);
-		}
+		Assert.assertEquals(3, frequency);
+		System.out.println("Frequency of Paranoid is " + frequency);
+	}
 }
